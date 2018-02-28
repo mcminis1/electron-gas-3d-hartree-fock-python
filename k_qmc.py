@@ -4,7 +4,7 @@ class Occupation(object):
     def __init__(self, k2_max, r_s=1.0):
         filled_k2_max = 0
         self.electrons = []
-        # 2D only
+        # 3D only
         e_shell = int(np.ceil(np.sqrt(k2_max)))
         dim_length = 2*e_shell+1
         self.occupation = np.zeros((dim_length,dim_length,dim_length))
